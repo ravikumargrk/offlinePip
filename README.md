@@ -7,12 +7,12 @@ Note: This is WIP
 2. You can download complete binary wheels using this command for host in remote system with internet access
 ```shell
 set PIP_CONFIG_FILE=%cd%\pip_config.ini
-pip download ollama --only-binary=:all: --platform manylinux_x86_64 --python-version 39 --implementation cp --abi cp39
+pip download ollama --only-binary=:all:
 ```
 Or you may download with no dependencies (Not really useful)
 ```shell
 set PIP_CONFIG_FILE=%cd%\pip_config.ini
-pip download ollama --no-deps --platform manylinux_x86_64 --python-version 39 --implementation cp --abi cp39
+pip download ollama --no-deps
 ```
 3. Copy wheels to host system and install using this command:
 ```shell
